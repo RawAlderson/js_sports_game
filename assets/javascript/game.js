@@ -6,7 +6,22 @@ const xgoals1 = document.querySelector("#teamone-numgoals")
 const shoot_button2 = document.querySelector("#teamtwo-shoot-button")
 const shots_taken2 = document.querySelector("#teamtwo-numshots")
 const xgoals2 = document.querySelector("#teamtwo-numgoals")
-
+reset_button.addEventListener("click", function(){
+    let resetshotstaken = Number(shots_taken1.innerHTML) * 0;
+    shots_taken1.innerHTML = resetshotstaken;
+})
+reset_button.addEventListener("click", function(){
+    let resetshotstaken = Number(xgoals1.innerHTML) * 0;
+    xgoals1.innerHTML = resetshotstaken;
+})
+reset_button.addEventListener("click", function(){
+    let resetshotstaken = Number(shots_taken2.innerHTML) * 0;
+    shots_taken2.innerHTML = resetshotstaken;
+})
+reset_button.addEventListener("click", function(){
+    let resetshotstaken = Number(xgoals2.innerHTML) * 0;
+    xgoals2.innerHTML = resetshotstaken;
+})
 reset_button.addEventListener("click", function() {
     let numberofresets = Number(reset_count.innerHTML) + 1;
     reset_count.innerHTML = numberofresets;
